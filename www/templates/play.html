@@ -1,0 +1,21 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">»граем!</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeGame()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doGameStep()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">”гадайте, какое завершение фразы в Google самое попул€рное:</span>
+          <input type="text" ng-model="gameData.guess">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">”гадать!</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
